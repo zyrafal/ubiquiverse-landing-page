@@ -1,0 +1,183 @@
+/*nav elements */
+
+#nav_menu ul {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;    
+    padding: 0;
+    list-style: none;
+    font-family: 'proxima_nova_rgregular';
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 25%;
+    border: 5px double transparent;
+}
+
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding-top: 6px;
+    color: #FFFFFF;
+    background-color: #4C4C4C;
+    font-weight: bold;
+    text-decoration: none;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#nav_menu ul ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+}
+
+#nav_menu ul ul li {
+    float: none;
+}
+
+#nav_menu ul li:hover > ul {
+    display: block;
+    border-bottom: none;
+}
+
+#nav_menu > ul::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+#nav_menu .current, #mobile_menu .current {
+    color: gold;
+    font-family: 'proxima_nova_rgregular';
+    border: 0.02px #FFFFFF solid;
+}
+
+#myPopup {
+    display: none;
+    background-color: #FFFFFF;
+}
+
+#nav_menu div {
+    background-color: #05061B;
+}
+
+/* Popup container */
+.popup1 {
+    background-color: #FFFFFF;
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup1 .popuptext1 {
+    display: none;
+    width: 160px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup1 div :hover > .popuptext1 {
+    display: block;
+    background-color: #FFFFFF;
+}
+
+.popup1 .popuptext1::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #FFFFFF;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup1 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    background-color: #FFFFFF;
+}
+
+/* Second popup container */
+.popup2 {
+    background-color: #FFFFFF;
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup2 .popuptext2 {
+    display: none;
+    width: 160px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup2 div :hover > .popuptext2 {
+    display: block;
+    background-color: #FFFFFF;
+}
+
+.popup2 .popuptext2::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #FFFFFF;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup2 .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    background-color: #FFFFFF;
+
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+/* hide the mobile menu */ 
+#mobile_menu { 
+    display: none;
+}
+
+

@@ -1,0 +1,427 @@
+/* the styles for the elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #05061B;
+    background-image: url(../Images/city-grid.png);
+    background-color: #05061B;
+    background-position: absolute center;
+    background-size: 100%;
+}
+
+a:link {
+      text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+@font-face {
+	font-family: 'proxima_nova_rgregular';
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima_nova_rgbold';
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'adelle_rgregular';
+	src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/adelle_reg-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+hr {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: #4C4C4C;
+    border-top: solid 3px #4C4C4C;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+body {
+	font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 0 auto 0;
+}
+
+/* the styles for the header */
+header {
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+/*  background-image: url("../Images/ubq-banner.png");
+    background-position: center center;
+    background-size: 100%; */
+}
+
+header img {
+    display: block;
+    max-height: 120px;
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 128px;
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header blockquote {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+}
+
+/* styles for the section */
+main {
+/*  background-image: url(../Images/ubq-grid.png);
+    background-repeat: repeat;
+    background-color: #05061B;
+    background-size: 40.7%; */
+}
+
+a:hover, a:focus {
+    color: #FFFFFF;
+}
+
+#ubiquiverse img {
+    display: block;
+    padding: 0;
+    margin: 0;
+    border-radius: 17px;
+    max-width: 100;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    max-width: 94.5%;
+}
+
+section h2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+}
+
+section h3 {
+    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 50%;
+    font-size: 32px;
+}
+
+section h4 {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+section h5 {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#schedule ul {
+    list-style: none;
+}
+
+#schedule ul li {
+    padding-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px; 
+}
+
+#schedule ul > li:before {
+    content: "";
+    height: 2.7rem;
+    width: 2.7rem;
+    display: block;
+    float: left; 
+    margin-top: 0.06rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background: url(../Images/ubqw.png);
+    background-size: cover;
+    background-position: center;
+    padding: .15rem;
+    transform: translateY(20%);
+}
+
+#schedule ul > li:after { 
+    background: url(../Images/ubqw.png);
+    background-size: cover;
+    background-position: center;
+    padding: .15rem;
+}
+
+#schedule p {
+    text-indent: 40px;
+    font-size: 16px;
+    margin-left: 102px;
+    margin-right: 100px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#schedule h4 {
+    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
+
+#schedule h5 {
+    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-indent: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#schedule h6 {
+    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-indent: 102px;
+}
+
+/* #schedule a {
+    text-indent: 40px;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+} */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+button {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 25px;
+  width: 50%;
+}
+section p {
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+    padding: 10px;
+    text-indent: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#textbox {
+    border-radius: 15px;
+    background-color: #4c4c4c;
+}
+
+#border {
+    background-image: linear-gradient(45deg, #00c2ff, #00FFBA);
+    border-radius: 17px;
+    padding: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#trailer {
+    background-image: linear-gradient(45deg, #00c2ff, #00FFBA);
+    border-radius: 17px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 1px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 25px;
+}
+
+#trailer video {
+    border-radius: 17px;
+}
+
+#calendar_border {
+    background-image: linear-gradient(45deg, #00C2FF, #00FFBA);
+    border-radius: 17px;
+    padding: 5px;
+    margin-left: 57px;
+    margin-right: 57px;
+    min-width: 310px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.speaker_column {
+    float: left;
+    display: block;
+    margin: auto;
+    width: 33.3%;
+    text-align: center;
+}
+
+/* Clear floats after image containers */
+.speaker_row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.speaker {
+    padding-bottom: 10px;
+}
+
+/*  .schedule_column {
+  float: left;
+  width: 50%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+} */
+
+/* Clear floats after the columns */
+/* .schedule_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.schedule_column img {
+    display: block;
+    max-height: 230px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* 4 image containers */
+.partner_column {
+    float: left;
+    display: block;
+    margin: auto;
+    width: 25%;
+    max-height: 130px;
+}
+
+/* Clear floats after the columns */
+.partner_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.partner_column2 {
+    float: left;
+    display: block;
+    margin: auto;
+    width: 32.7%;
+}
+
+/* Clear floats after the columns */
+.partner_row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 4 image containers */
+.partner_column3 {
+    float: left;
+    display: block;
+    margin: auto;
+    width: 25%;
+    max-height: 130px;
+    height: 100%;
+}
+
+/* Clear floats after the columns */
+.partner_row3:after {
+  content: "";
+  display: table;
+  clear: both;
+    padding-bottom: 100px;
+}
+
+.partner {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+  margin: auto;
+    margin-top: 100px;
+    transform: translateY(-50%);
+}
+
+/* footer */
+footer p {
+    padding: 1.5em 1.5em;
+    margin-top: 50px;
+    text-align: center;
+    clear: both;
+    background-color: #4c4c4c;
+}
+
+/* viewports */ /**/
+
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+    
+}
+
+/* mobile landscape layout (480px to 767)*/
+@media only screen and (max-width: 767px) {
+    
+}
+
+ /* mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px) {
+    
+}
